@@ -62,8 +62,8 @@
     .home-area {
         position: relative;
         height: 100vh;
-        z-index: -2;
-        background-color: #ffc2e1;
+        /* z-index: -2; */
+        
     }
     
     .home-copy {
@@ -137,6 +137,10 @@
     }
     
     @media (max-width: 900px) {
+        /* .home-area {
+            z-index: -2;
+            background-color: #ffc2e1;
+        } */
         .home-copy {
             position: absolute;
             top: 30%;
@@ -173,7 +177,7 @@
             left: 50%;
             transform: translate(-50%);
             width: 92%;
-/*             background-color: #64b36486; */
+            background-color: #64b36486;
             padding: 0.5rem;
             border-radius: 24px;
         }
@@ -229,6 +233,23 @@
         /* ロゴアニメーション */
     
     @media (max-width: 900px) {
+        #video {
+            display: none;
+        }
+        #video2 {
+            display: inline;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 120vh;
+            min-height: 100%;
+            min-width: 100%;
+        }
+    }
+    
+    @media (max-width: 720px) {
         #video {
             display: none;
         }
