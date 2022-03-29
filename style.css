@@ -62,6 +62,8 @@
     .home-area {
         position: relative;
         height: 100vh;
+        z-index: -2;
+        background-color: #ffc2e1;
     }
     
     .home-copy {
@@ -133,52 +135,67 @@
             opacity: 1;
         }
     }
-/*     
+    
     @media (max-width: 900px) {
         .home-copy {
             position: absolute;
-            top: 60%;
+            top: 30%;
             left: 50%;
             transform: translate(-50%);
-            width: 90%;
-        }
-        .home-title {
-            font-size: 1.25rem;
-        }
-        .home-sub {
-            font-size: 1.1rem;
-        }
-        .home-sub-2 {
-            font-size: 0.75rem;
+            width: 70%;
+            /* background-color: #64b3644b; */
+            padding: 1rem;
+            border-radius: 24px;
         }
         .home-button {
-            margin-top: 4%;
+            margin-top: 8%;
             font-size: 1rem;
+        }.home-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+        .home-sub {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+        .home-sub-2 {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            /* font-weight: bold; */
         }
     }
     
     @media (max-width: 720px) {
         .home-copy {
             position: absolute;
-            top: 55%;
+            top: 25%;
             left: 50%;
             transform: translate(-50%);
-            width: 90%;
+            width: 92%;
+            background-color: #64b36486;
+            padding: 0.5rem;
+            border-radius: 24px;
+        }
+        .home-text {
+            text-shadow: 0 0 16px #64b364;
         }
         .home-title {
-            font-size: 1.25rem;
-        }
-        .home-sub {
-            font-size: 1.1rem;
-        }
-        .home-sub-2 {
-            font-size: 0.75rem;
-        }
-        .home-button {
-            margin-top: 4%;
+            text-align: center;
             font-size: 1rem;
         }
-    } */
+        .home-sub {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .home-sub-2 {
+            font-size: 0.85rem;
+        }
+        .home-button {
+            margin-top: 8%;
+            font-size: 1rem;
+        }
+    }
     
     /* キャッチコピー */
     /* ロゴアニメーション */
@@ -209,32 +226,26 @@
         display: none;
     }
     
-    #video3 {
-        display: none;
-    }
         /* ロゴアニメーション */
     
-    /* @media (max-width: 900px) {
+    @media (max-width: 900px) {
         #video {
             display: none;
         }
         #video2 {
-            display: none;
-        }
-        #video3 {
             display: inline;
             position: absolute;
             z-index: -1;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -60%);
-            width: 100vw;
+            transform: translate(-50%, -50%);
+            height: 100vh;
             min-height: 100%;
             min-width: 100%;
         }
     }
     
-    @media (max-width: 720px) {
+    /* @media (max-width: 720px) {
         #video {
             display: none;
         }
