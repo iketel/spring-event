@@ -120,6 +120,7 @@
     
     
     .home-button {
+        z-index: 2;
         margin-top: 8%;
         animation-name: fade2;
         animation-fill-mode: backwards;
@@ -157,33 +158,25 @@
         .home-sub-2 {
             font-size: 1rem;
         }
-        .home-button {
-            margin-top: 4%;
-            font-size: 1rem;
-        }
     }
-    
+
     @media (max-width: 720px) {
         .home-copy {
             position: absolute;
-            top: 35%;
+            top: 50%;
             left: 50%;
-            transform: translate(-50%);
+            transform: translate(-50%, -50%);
             width: 90%;
-            background-color: #ffc3e100;
+            background-color: #ffc3e1b9;
         }
         .home-title {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
         }
         .home-sub {
-            font-size: 1.0rem;
+            font-size: 1rem;
         }
         .home-sub-2 {
             font-size: 0.9rem;
-        }
-        .home-button {
-            margin-top: 6%;
-            font-size: 1rem;
         }
     }
     
@@ -212,39 +205,38 @@
         min-width: 100%;
     }
 
+    #video2 {
+        display: none;
+    }
+
         /* ロゴアニメーション */
     
     @media (max-width: 900px) {
-        .home-area {
-            background-color: #ffc3e1f3;
-            z-index: -2;
+        #video1 {
+            display: none;
         }
-        #video {
+        #video2 {
             display: inline;
             position: absolute;
             z-index: -1;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 100vw;
+            height: 150vh;
             min-height: 100%;
             min-width: 100%;
         }
     }
-    
+
     @media (max-width: 720px) {
-        .home-area {
-            background-color: #ffc3e1f3;
-            z-index: -2;
-        }
-        #video {
+        #video2 {
             display: inline;
             position: absolute;
             z-index: -1;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -80%);
-            width: 100vw;
+            transform: translate(-50%, -50%);
+            height: 110vh;
             min-height: 100%;
             min-width: 100%;
         }
