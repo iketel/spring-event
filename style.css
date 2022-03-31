@@ -103,6 +103,29 @@
         margin-top: 1rem;
         /* font-weight: bold; */
     }
+
+    .home-text-2 {
+        margin-top: 8%;
+        color: #ffffff;
+        text-align: center;
+        /* color: #B37694; */
+        /* text-shadow: 0 0 25px #ffffff; */
+        text-shadow: 0 0 16px #64b364;
+        animation-name: fade;
+        animation-fill-mode: backwards;
+        animation-delay: 1s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+
+    .home-sub-3 {
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    .home-sub-3:hover {
+        color: #64B364;
+    }
     
     @keyframes fade{
         0%{
@@ -163,6 +186,9 @@
             margin-top: 2rem;
             /* font-weight: bold; */
         }
+        .home-sub-3 {
+            font-size: 0.8rem;
+        }
     }
     
     @media (max-width: 720px) {
@@ -172,7 +198,7 @@
             left: 50%;
             transform: translate(-50%);
             width: 92%;
-/*             background-color: #64b36486; */
+            /* background-color: #64b36486; */
             padding: 0.5rem;
             border-radius: 24px;
         }
@@ -193,6 +219,9 @@
         .home-button {
             margin-top: 8%;
             font-size: 1rem;
+        }
+        .home-sub-3 {
+            font-size: 0.8rem;
         }
     }
     
